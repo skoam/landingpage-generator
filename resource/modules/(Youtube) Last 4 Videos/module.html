@@ -1,0 +1,26 @@
+<div class="row">
+  <div class="large-3 columns">
+    <iframe width="100%" height="auto" src="https://www.youtube.com/embed/" id="REPLACE_WITH_MODULE_NAME-video-1" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="large-3 columns">
+    <iframe width="100%" height="auto" src="https://www.youtube.com/embed/" id="REPLACE_WITH_MODULE_NAME-video-2" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="large-3 columns">
+    <iframe width="100%" height="auto" src="https://www.youtube.com/embed/" id="REPLACE_WITH_MODULE_NAME-video-3" frameborder="0" allowfullscreen></iframe>
+  </div>
+  <div class="large-3 columns">
+    <iframe width="100%" height="auto" src="https://www.youtube.com/embed/" id="REPLACE_WITH_MODULE_NAME-video-4" frameborder="0" allowfullscreen></iframe>
+  </div>
+</div>
+
+<script>
+  var tmp_ytaccount = $.getJSON("https://www.googleapis.com/youtube/v3/channels?part=contentDetails&id=REPLACE_WITH_VALUE_1&key={insert_youtube_api_key_here}",
+  function (contentDetails) {
+    var tmp_playlist = $.getJSON("https://www.googleapis.com/youtube/v3/playlistItems?part=contentDetails&playlistId=" + contentDetails.items[0]["contentDetails"]["relatedPlaylists"]["uploads"] + "&key={insert_youtube_api_key_here}&maxResults=4",
+    function (uploadPlaylist) {
+      for (var i = 0; i < uploadPlaylist.items.length; i++) {
+        document.getElementById("REPLACE_WITH_MODULE_NAME-video-" + (i + 1)).src = "https://www.youtube.com/embed/" + uploadPlaylist.items[i]["contentDetails"]["videoId"];
+      }
+    });
+  });
+</script>

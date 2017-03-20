@@ -1,0 +1,68 @@
+<div class="large reveal" id="contact-container" data-reveal>
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<div class="large reveal" id="tc-container" data-reveal>
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<div class="large reveal" id="privacy-container" data-reveal>
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<div class="large reveal" id="copyright-container" data-reveal>
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<div class="row module">
+  <ul class="footer-module-content clearfix">
+    <li class="footer-module-li">
+      <a class="button tiny hollow" data-open="contact-container" id="REPLACE_WITH_MODULE_NAME-contact">REPLACE_WITH_VALUE_3</a>
+    </li>
+    <li class="footer-module-li">
+      <a class="button tiny hollow" data-open="tc-container" target="_self" id="REPLACE_WITH_MODULE_NAME-tc">REPLACE_WITH_VALUE_4</a>
+    </li>
+    <li class="footer-module-li">
+      <a class="button tiny hollow" data-open="privacy-container" target="_self" id="REPLACE_WITH_MODULE_NAME-privacy">REPLACE_WITH_VALUE_5</a>
+    </li>
+    <li class="footer-module-li">
+      <a class="button tiny hollow" data-open="copyright-container" target="_self" id="REPLACE_WITH_MODULE_NAME-copyright">REPLACE_WITH_VALUE_6</a>
+    </li>
+  </ul>
+</div>
+
+<script>
+  var platform = "REPLACE_WITH_VALUE_2";
+  var domain = platform == "NA" ? "com" : "net";
+  var locale = platform == "NA" ? "?locale=us_US" : "?locale=en_EU";
+
+  $.ajax('//shop.spreadshirt.' + domain + '/REPLACE_WITH_VALUE_1/shopData/imprint' + locale)
+    .done(function(response){
+      document.getElementById("contact-container").innerHTML = response + document.getElementById("contact-container").innerHTML;
+  });
+
+  $.ajax('//shop.spreadshirt.' + domain + '/REPLACE_WITH_VALUE_1/shopData/tc' + locale)
+    .done(function(response){
+      document.getElementById("tc-container").innerHTML = response + document.getElementById("tc-container").innerHTML;
+  });
+
+  $.ajax('//shop.spreadshirt.' + domain + '/REPLACE_WITH_VALUE_1/shopData/privacy' + locale)
+    .done(function(response){
+      document.getElementById("privacy-container").innerHTML = response + document.getElementById("privacy-container").innerHTML;
+  });
+
+  $.ajax('//shop.spreadshirt.' + domain + '/REPLACE_WITH_VALUE_1/shopData/copyright' + locale)
+    .done(function(response){
+      document.getElementById("copyright-container").innerHTML = response + document.getElementById("copyright-container").innerHTML;
+  });
+
+  $(document).foundation();
+</script>

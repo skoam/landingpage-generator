@@ -1,0 +1,30 @@
+.bsi-countdown-container {
+  font-family: Roboto;
+  font-weight: bold;
+}
+
+.bsi-limitation-title {
+  margin-bottom: 4px;
+  font-size: 1.5em;
+}
+
+.bsi-countdown-label {
+  font-size: .7em;
+  display: inline-block;
+  color: grey;
+}
+
+.bsi-countdown {
+  font-size: 1.5em;
+}
+
+.bsi-countdown-active {
+  color: #DE564B;
+}
+
+.bsi-countdown-inactive {
+  color: green;
+  font-weight: 100;
+}
+
+

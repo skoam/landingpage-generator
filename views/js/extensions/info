@@ -1,0 +1,4 @@
+Run /bin/build.sh after making changes to these files.
+This will create a minified and combined version as extension.min.js.
+
+Include extension.min.js instead of single files.

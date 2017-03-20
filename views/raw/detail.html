@@ -1,0 +1,107 @@
+<html>
+  <head>
+    <title>Key Accounts - REPLACE_WITH_NAME</title>
+    REPLACE_WITH_HEAD
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <a href="overview.php"><img class="left sprd-logo" src="../resource/img/sprdlogo.png"></a>
+        <h1 class="inverse navbar-title" id="instance-navigation-title">Key Accounts - REPLACE_WITH_NAME</h1>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        REPLACE_WITH_NAVIGATION
+        <div class="hidden" id="instance-view-name">REPLACE_WITH_NAME</div>
+
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <h1 class="page-header">REPLACE_WITH_NAME</h1>
+          <div class="account-image-container"><img id="instance-account-image" class="account-image" src="REPLACE_WITH_ACCOUNT_IMAGE"></div>
+          (click to change profile image)
+          <input type="file" id="instance-btn-change-profile-img" class="form-control change-profile-image" onchange="view.actions.upload.upload_image(this, null, 'account')"/>
+          <h3 class="account-description">REPLACE_WITH_DESCRIPTION</h3>
+          <br>
+          <h1 class="page-header">Landing Page</h1>
+          <div class="hint bg-warning hidden" id="instance-save-changes-hint">
+            You have made changes to the landing page. Don't forget to 
+            <button type="button" class="btn btn-xs btn-primary" id="instance-btn-save-modules">Save Changes</button>
+          </div>
+          <div class="hint" id="instance-generate-page-hint">
+            <button type="button" class="btn btn-sm btn-success left" id="instance-btn-generate-lp">Generate Landingpage</button>
+            <label class="left small-margin-left small-margin-top success" id="instance-label-generate-lp">
+            </label>
+          </div>
+          <br class="clear">
+          <div class="row">
+            <div class="col-md-6">
+              <ul id="instance-modules-container" class="list-unstyled modules-container">
+                <button type="button" class="btn btn-sm btn-success" id="instance-btn-add-module">+ Add Module</button>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <ul id="instance-module-settings" class="list-unstyled module-settings hidden">
+                <button type="button" class="btn btn-sm btn-warning" id="instance-module-delete-module">- Remove Module</button>
+                <div class="module-settings-content" id="instance-module-settings-content">
+                  <div class="module-settings-data" id="instance-module-settings-data">
+                  </div>
+                </div>
+              </ul>
+            </div>
+          </div>
+          <div class="hidden" id="instance-module-settings-store"></div>
+          <br class="clear">
+          <br>
+          <h1 class="page-header">Settings</h1>
+          <textarea id="instance-textarea-change-description" class="form-control">REPLACE_WITH_DESCRIPTION</textarea>
+          <input id="instance-button-change-description" type="button" value="Change Description" class="btn btn-xs btn-primary small-margin-top right"/>
+          <label class="left small-margin-left small-margin-top success" id="instance-label-change-description">
+          </label>
+          <br>
+          <br>
+          <br>
+          <h1 class="page-header">Comments</h1>
+          <div id="instance-comments-raw" class="hidden">REPLACE_WITH_COMMENTS_RAW</div>
+          <input type="text" placeholder="username (optional)" id="instance-comments-input-username" class="form-control"/>
+          <input type="text" placeholder="comment title (optional)" id="instance-comments-input-header" class="form-control small-margin-top"/>
+          <textarea id="instance-comments-input-body" placeholder="meaningful comment" class="form-control small-margin-top"></textarea>
+          <input type="button" value="add comment" id="instance-comments-add-comment" class="btn btn-xs btn-primary small-margin-top right"/>
+          <br>
+          <br>
+          <div>
+            <ul class="list-unstyled" id="instance-comments-list">
+            </ul>
+          </div>
+          <br>
+          <br>
+          <h1 class="page-header">Delete Account</h1>
+          <button type="button" class="btn btn-xs btn-primary hidden" id="instance-btn-cancel-delete-account">Cancel</button>
+          <button type="button" class="btn btn-xs btn-warning" id="instance-btn-delete-account">Delete Account</button>
+          <p class="hidden danger" id="instance-delete-account-hint">Deleting an account cannot be undone.</p>
+          <div class="hidden" id="instance-dialogue-add-module">REPLACE_WITH_DIALOGUE_ADD_MODULE</div>
+        </div>
+      </div>
+    </div>
+    <div style="display:none" id="instance-hidden-project-name">REPLACE_WITH_NAME</div>
+    <!-- Campaign Reminder -->
+    <div id="instance-campaign-reminder" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <!-- Campaign Reminder Content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">You have made changes to a campaign start and end date.</h4>
+          </div>
+          <div class="modal-body">
+            <p>You need to update the shop first.<br>Depending on the spreadshop cache, this can take 5-15 Minutes to take effect.</p>
+            <input id="update-campaign-and-save" type="button" class="btn btn-sm btn-primary small-margin-top" value="Update Shop & Save Settings"/>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

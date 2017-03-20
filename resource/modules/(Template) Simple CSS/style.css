@@ -1,0 +1,21 @@
+body {
+  background-color: REPLACE_WITH_CSS_VALUE_1;
+}
+
+.headline {
+  font-family: Roboto;
+  font-size: REPLACE_WITH_CSS_VALUE_2!important;
+  color: REPLACE_WITH_CSS_VALUE_3;
+}
+
+.subheader {
+  font-family: Roboto;
+  font-size: REPLACE_WITH_CSS_VALUE_4!important;
+  color: REPLACE_WITH_CSS_VALUE_5;
+}
+
+.text-block {
+  font-family: Raleway;
+  font-size: REPLACE_WITH_CSS_VALUE_6!important;
+  color: REPLACE_WITH_CSS_VALUE_7;
+}

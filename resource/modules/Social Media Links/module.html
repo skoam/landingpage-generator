@@ -1,0 +1,28 @@
+<div id="social_nav" class="social_nav">
+  <ul id="social_nav_ul" class="social_nav_ul">
+    <li class="youtube">
+      <a class="social-media-link" target="_blank" href="//REPLACE_WITH_VALUE_1"></a>
+    </li>
+    <li class="twitter">
+      <a class="social-media-link" target="_blank" href="//REPLACE_WITH_VALUE_2"></a>
+    </li>
+    <li class="instagram">
+      <a class="social-media-link" target="_blank" href="//REPLACE_WITH_VALUE_3"></a>
+    </li>
+    <li class="google">
+      <a class="social-media-link" target="_blank" href="//REPLACE_WITH_VALUE_4"></a>
+    </li>
+    <li class="facebook">
+      <a class="social-media-link" target="_blank" href="//REPLACE_WITH_VALUE_5"></a>
+    </li>
+  </ul>
+</div>
+
+<script>
+  var links = $(".social-media-link");
+  for (var i = 0; i < links.length; i++) {
+    if (links[i].href == "https:" || links[i].href == "http:" || links[i].href == "http:///") {
+      links[i].style.display = "none";
+    }
+  }
+</script>

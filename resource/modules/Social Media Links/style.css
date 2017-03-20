@@ -1,0 +1,64 @@
+.social_nav {
+  position: fixed;
+  z-index: 1000;
+  top: 2px;
+  right: 2px;
+}
+.social_nav ul li {
+  list-style: none;
+  float:left;
+}
+
+.social_nav ul li.spreadshirt a {    background-position: -66px -1251px;}
+
+.social_nav ul li.facebook a {    background-position: -66px -6px;}
+.social_nav ul li.youtube a {    background-position: -66px -65px;}
+.social_nav ul li.twitter a {    background-position: -66px -125px;}
+.social_nav ul li.google a {    background-position: -66px -184px;}
+
+.social_nav ul li.instagram a {    background-position: -66px -243px;}
+.social_nav ul li.picasa a {    background-position: -66px -302px;}
+.social_nav ul li.flickr a {    background-position: -66px -361px;}
+
+.social_nav ul li.pinterest a {    background-position: -66px -420px;}
+.social_nav ul li.tumblr a {    background-position: -66px -479px;}
+.social_nav ul li.stumbleupon a {    background-position: -66px -538px;}
+.social_nav ul li.delicious  a {    background-position: -66px -597px;}
+
+.social_nav ul li.forrst a {    background-position: -66px -656px;}
+.social_nav ul li.behance a {    background-position: -66px -715px;}
+.social_nav ul li.deviantart a {    background-position: -66px -774px;}
+
+.social_nav ul li.myspace a {    background-position: -66px -833px;}
+.social_nav ul li.lastfm a {    background-position: -66px -892px;}
+.social_nav ul li.soundcloud a {    background-position: -66px -951px;}
+.social_nav ul li.mixcloud a {    background-position: -66px -1010px;}
+
+.social_nav ul li.wordpress a {    background-position: -66px -1069px;}
+.social_nav ul li.linkedin a {    background-position: -66px -1128px;}
+.social_nav ul li.steam a {    background-position: -66px -1187px;}
+.social_nav ul li.rss a {    background-position: -66px -1246px;}
+
+.social_nav ul li a {
+  background: url("../resource/img/flat_social.png") repeat scroll 0px 0px transparent;
+  height: 48px;
+  min-height: 48px;
+  width: 48px;
+  min-width: 48px;
+  text-indent: -999px;
+  overflow: hidden;
+  box-shadow: 1px 1px 4px black;
+  border: 0px solid white;
+  border-radius: 4px;
+  display: block;
+  margin: 2px;
+  margin-right: 4px;
+}
+
+.social_nav ul li a:hover {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+  -moz-opacity: 0.5;
+  -khtml-opacity: 0.5;
+  opacity: 0.5;
+}

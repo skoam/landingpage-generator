@@ -1,0 +1,9 @@
+li.footer-module-li {
+  display: inline-block; 
+  margin: 0 10px 0 0;
+}
+
+.footer-module-content {
+  margin: 45px auto;
+  text-align: center;
+}
